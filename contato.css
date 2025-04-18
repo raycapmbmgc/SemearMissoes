@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+
+header {
+    width: 100%;
+    background-color: #fcf7f7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #0077cc;
+}
+
+/* Container principal */
+.informacoes {
+    min-height: calc(100vh - 100px); /* Altura da tela menos o header */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 120px; /* Garante espaço para o header fixo */
+    text-align: center;
+}
+
+
+/* Bloco individual de informação */
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Efeito ao passar o mouse */
+.bloco:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Topo do bloco (ícone + título) */
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.topo img {
+    width: 30px;
+    height: 30px;
+}
+
+.topo h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+    font-family: 'Merriweather', serif;
+}
+
+/* Parágrafo do bloco */
+.bloco p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 850px) {
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloco {
+        max-width: 90%;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .redes-sociais {
+        margin-top: 0; 
+    }
+
+    .redes-sociais a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1043px) {
+    .logo img {
+        height: 45px;
+    }
+
+    .redes-sociais a {
+        font-size: 12px;
+    }
+
+}
