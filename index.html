@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="imagex/png" href="/img/logo.png">
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -57,7 +57,12 @@
                 <img src="/img/nos.jpeg" alt="Imagem sobre a equipe ou empresa">
                 <div class="texto">
                     <p>
-                      
+                        O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem
+                         mais precisa. Atuamos de forma voluntária em comunidades carentes, hospitais, abrigos, 
+                         orfanatos e presídios, levando doações, mensagens de fé e apoio humanitário. 
+                         Todo o trabalho é realizado por voluntários e mantido com 100% de doações. 
+                         Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos 
+                         e semeamos valores desde a infância.
                     </p>
                 </div>
             </div>
@@ -75,6 +80,7 @@
               <img src="/img/mae6.jpeg">
               <img src="/img/mae7.jpeg">
               <button class="seta direita" onclick="mudarImagem(1, 1)">›</button>
+              <div class="indicadores" data-id="1"></div>
               <p class="legenda">Ação - traipu: medição de pressão arterial, entrega de cestas básica, roupas, brinquedos e lanches para crianças e adultos.</p>
             </div>
           
@@ -84,7 +90,9 @@
               <img src="/img/escola2.jpeg">
               <img src="/img/escola3.jpeg">
               <button class="seta direita" onclick="mudarImagem(2, 1)">›</button>
-              <p class="legenda">94 cestas básicas - Santa Luzia do Norte </p>
+              <div class="indicadores" data-id="2"></div>
+              <p class="legenda">94 cestas básicas que foram arrecadasdas sendo entregues para
+                as famílias carentes da cidade..  - Santa Luzia do Norte </p>
             </div>
           
             <div class="carrossel verde" data-id="3">
@@ -94,13 +102,10 @@
               <img src="/img/crianca3.jpeg">
               <img src="/img/crianca4.jpeg">
               <button class="seta direita" onclick="mudarImagem(3, 1)">›</button>
-              <p class="legenda">Ação social na Clínica Sorrisus 02.10.2021
-                Dia das crianças com saúde bucal, 20 crianças do projeto Semear Missões receberam:
-                ✔️Avaliação odontológica;
-                ✔️Procedimentos clínicos; 
-                ✔️Aprenderam como fazer a limpeza correta dos dentes,
-                ✔️Kit de limpeza (escova de dentes, pasta dental e fio dental).
-                E na hora do lanchinho, ganharam um super lanche feliz do MacDonald’
+              <div class="indicadores" data-id="3"></div>
+              <p class="legenda" id="legenda-3">
+                Ação social na Clínica Sorrisus 02.10.2021
+
                 </p>
             </div>
           </section>
@@ -110,10 +115,70 @@
             </div>
           </div>
         </div>
-        <div class="linha"></div>
-          
     </div>
-          
+    <div class="linha"></div>
+    <section class="Gigantinhos">
+      <h2>Gigantinhos</h2>
+      <div class="conteudo">
+        <!-- Carrossel à esquerda -->
+        <div class="carrosselgigantinhos" data-id="3">
+          <button class="seta esquerda" onclick="mudarImagem(3, -1)">‹</button>
+          <img src="/img/" class="active">
+          <img src="/img/">
+          <img src="/img/">
+          <img src="/img/">
+          <button class="seta direita" onclick="mudarImagem(3, 1)">›</button>
+          <div class="indicadores" data-id="3"></div>
+        </div>
+    
+        <!-- Texto à direita -->
+        <div class="texto">
+          <p>
+            O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem
+            mais precisa. Atuamos de forma voluntária em comunidades carentes, hospitais, abrigos, 
+            orfanatos e presídios, levando doações, mensagens de fé e apoio humanitário. 
+            Todo o trabalho é realizado por voluntários e mantido com 100% de doações. 
+            Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos 
+            e semeamos valores desde a infância.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-conteudo">
+          <div class="coluna logo-coluna">
+            <img src="img/logo.png" alt="Logo da empresa" class="logo-footer">
+          </div>
+          <div class="coluna">
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="/">Início</a></li>
+              <li><a href="/contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h4>Contato</h4>
+            <p>Email: <a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5582996141189" target="_blank">+55 (82) 9 9614-1189</a></p>
+          </div>
+          <div class="coluna">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">  
+                 <a href="https://instagram.com/projetosemearmissoes" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a><br>
+              <a href="https://wa.me/5582996141189" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+                
+          </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Semear Missões. Todos os direitos reservados.</p>
+          </div>
+        </footer>
+      
 <script src="script.js"></script>
 </body>
 </html>
