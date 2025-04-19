@@ -25,11 +25,12 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+    height: 70px;
 }
 
 
 .logo img {
-    height: 80px;
+    height: 60px;
     width: auto;
 }
 
@@ -58,23 +59,26 @@ header {
     text-align: center;
 }
 
-
-/* Bloco individual de informação */
 .bloco {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;      /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+    text-align: center;       /* Centraliza o texto */
     width: 100%;
-    max-width: 250px;
+    max-width: 320px;
+    min-height: 260px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
     box-sizing: border-box;
 }
 
-/* Efeito ao passar o mouse */
+   
+  /* Efeito ao passar o mouse */
 .bloco:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -108,6 +112,101 @@ header {
     line-height: 1.5;
 }
 
+.footer {
+    background-color: #fcf7f7;
+    color: #444;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+    border-top: 2px solid #eee;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  .footer .coluna {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  
+  .footer .coluna h4 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #222;
+  }
+  
+  .footer .coluna ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .coluna ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #005f99;
+  }
+  
+  .footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #0077cc;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #005f99;
+  }
+  
+
+  .logo-footer {
+    width: 120px;
+    height: auto;
+  }
+  
+  .logo-coluna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .logo-coluna {
+      justify-content: center;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  
 /* Responsivo para telas menores */
 @media (max-width: 850px) {
     .informacoes {
@@ -153,4 +252,117 @@ header {
         font-size: 12px;
     }
 
+}
+
+
+/* Fade-in nos blocos ao carregar */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  
+  .bloco:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .bloco:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .bloco:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  /* Hover com cor de fundo sutil */
+  .bloco:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* Fonte Inter para link "Voltar para a página inicial" */
+  .redes-sociais a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+
+  /* Animação nos ícones */
+.topo img {
+    transition: transform 0.3s ease;
+  }
+  
+  .bloco:hover .topo img {
+    transform: scale(1.15) rotate(5deg);
+  }
+  
+  /* Gradiente de fundo ao hover */
+  .bloco:hover {
+    background: linear-gradient(135deg, #d0d8da, #e9e0e0);
+  }
+  
+  /* Borda animada suave */
+  .bloco {
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bloco::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #a8d4da, #687885);
+    z-index: -1;
+    border-radius: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .bloco:hover::before {
+    opacity: 1;
+  }
+  
+
+  .botao-contato {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-contato i {
+    font-size: 16px;
+}
+
+.botao-contato:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+.botao-contato.whatsapp {
+    background-color: #25d366;
+}
+
+.botao-contato.whatsapp:hover {
+    background-color: #1ebe5d;
 }
