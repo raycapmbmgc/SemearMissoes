@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="contato.css">
+    <title>Projeto Semear Missões</title>
     <link rel="shortcut icon" type="imagex/png" href="/img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -15,49 +17,146 @@
             <img src="/img/logo.png" alt="Logo">
         </div>
         <div class="redes-sociais">
-            <a href="/">Voltar para a pagina inicial</a>
+            <a href="/contato.html">Contato</a>
         </div>
     </header>
-    <div class="informacoes">
-        <div class="bloco">
-            <div class="topo">
-                <img src="/img/contato.png" alt="contato">
-                <h3>Contato</h3>
-            </div>
-            <p>Fale com a gente para dúvidas, sugestões ou parcerias.</p>
-            <a href="mailto:semearmissoesmcz@gmail.com" class="botao-contato">
-                <i class="fas fa-envelope"></i> Enviar Email
-            </a>
+
+    <div class="container">
+        <div class="imagemprincipal">
+            <img src="/img/Capa - semear missões.png.png" alt="Imagem Principal">
         </div>
-    
-        <div class="bloco">
-            <div class="topo">
-                <img src="/img/selecao.png" alt="selecao">
-                <h3>Processo Seletivo</h3>
+        <div class="informacoes">
+            <div class="bloco">
+                <div class="topo">
+                    <img src="/img/contato.png" alt="contato">
+                    <h3>Contato</h3>
+                </div>
+                <p>Fale conosco no WhatsApp: <br><a href="https://wa.me/5582996141189" target="_blank">+55 (82)9 9614-1189</a>
+                </p>
             </div>
-            <p>Interessado em fazer parte do nosso projeto? Saiba como participar do processo seletivo!</p>
-            <a href="mailto:semearmissoesmcz@gmail.com?subject=Interesse no Processo Seletivo" class="botao-contato">
-                <i class="fas fa-user-plus"></i> Quero Participar
-            </a>
-        </div>
-    
-        <div class="bloco">
-            <div class="topo">
-                <img src="/img/aviao-de-papel.png" alt="email">
-                <h3>WhatsApp</h3>
+            <div class="bloco">
+                <div class="topo">
+                    <img src="/img/selecao.png" alt="selecao">
+                    <h3>Processo seletivo</h3>
+                </div>
+                <p>Enviar curriculo para: <br>
+                    <a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a>
+                </p>
             </div>
-            <p>Converse com a gente direto pelo WhatsApp. Clique e mande sua mensagem agora!</p>
-            <a href="https://wa.me/5582996141189" target="_blank" class="botao-contato whatsapp">
-                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-            </a>
+            <div class="bloco">
+                <div class="topo">
+                    <img src="/img/aviao-de-papel.png" alt="email">
+                    <h3>Email</h3>
+                </div>
+                <p><a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a></p>
+            </div>
+        </div>   
+        <div class="linha"></div>
+        <section class="sobre-nos">
+            <h2>Quem nós somos ?</h2>
+            <div class="conteudo">
+                <img src="/img/nos.jpeg" alt="Imagem sobre a equipe ou empresa">
+                <div class="texto">
+                    <p>
+                        O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem
+                         mais precisa. Atuamos de forma voluntária em comunidades carentes, hospitais, abrigos, 
+                         orfanatos e presídios, levando doações, mensagens de fé e apoio humanitário. 
+                         Todo o trabalho é realizado por voluntários e mantido com 100% de doações. 
+                         Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos 
+                         e semeamos valores desde a infância.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="linha"></div>
+        <h1 class="titulo-carrosseis">Ações Sociais </h1>
+        <section class="carrosseis">
+            <div class="carrossel roxo" data-id="1">
+              <button class="seta esquerda" onclick="mudarImagem(1, -1)">‹</button>
+              <img src="/img/nos.jpeg" class="active">
+              <img src="/img/mae2.jpeg">
+              <img src="/img/mae3.jpeg">
+              <img src="/img/mae4.jpeg">
+              <img src="/img/mae5.jpeg">
+              <img src="/img/mae6.jpeg">
+              <img src="/img/mae7.jpeg">
+              <button class="seta direita" onclick="mudarImagem(1, 1)">›</button>
+              <div class="indicadores" data-id="1"></div>
+              <p class="legenda">Ação - traipu: medição de pressão arterial, entrega de cestas básica, roupas, brinquedos e lanches para crianças e adultos.</p>
+            </div>
+          
+            <div class="carrossel azul" data-id="2">
+              <button class="seta esquerda" onclick="mudarImagem(2, -1)">‹</button>
+              <img src="/img/escola.jpeg" class="active">
+              <img src="/img/escola2.jpeg">
+              <img src="/img/escola3.jpeg">
+              <button class="seta direita" onclick="mudarImagem(2, 1)">›</button>
+              <div class="indicadores" data-id="2"></div>
+              <p class="legenda">94 cestas básicas que foram arrecadasdas sendo entregues para
+                as famílias carentes da cidade..  - Santa Luzia do Norte </p>
+            </div>
+          
+            <div class="carrossel verde" data-id="3">
+              <button class="seta esquerda" onclick="mudarImagem(3, -1)">‹</button>
+              <img src="/img/crianca.jpeg" class="active">
+              <img src="/img/crianca2.jpeg">
+              <img src="/img/crianca3.jpeg">
+              <img src="/img/crianca4.jpeg">
+              <button class="seta direita" onclick="mudarImagem(3, 1)">›</button>
+              <div class="indicadores" data-id="3"></div>
+              <p class="legenda" id="legenda-3">
+                Ação social na Clínica Sorrisus 02.10.2021
+
+                </p>
+            </div>
+            <section class="comoDoar">
+              <div class="conteudo">
+                <div class="texto">
+                  <h2>Como faço para doar?</h2>
+                  <p>
+                    Quer fazer parte dessa corrente do bem? É simples!
+                    <br><br>
+                    Para realizar a sua doação, entre em contato com a nossa equipe através do e-mail
+                    <strong><a href="mailto:projetosemearmissoes@gmail.com">projetosemearmissoes@gmail.com</a></strong>
+                    ou pelo WhatsApp
+                    <strong><a href="https://wa.me/5582988207781" target="_blank">(82) 98820-7781</a></strong>.
+                    Vamos te orientar direitinho sobre como contribuir e ajudar a transformar vidas com o Projeto Semear.
+                  </p>
+                </div>
+                <div class="container-story">
+                  <div class="story rosa">
+                    <video src="/video/instituto.mp4" autoplay loop muted playsinline></video>
+                  </div>
+                </div>
+              </div>
+            </section>         
+    <div class="linha"></div>
+    <section class="Gigantinhos">
+      <h2>Gigantinhos</h2>
+      <div class="conteudo">
+        <div class="carrosselgigantinhos" data-id="gigantinhos">
+          <img src="img/dama1.png" class="active">
+          <img src="img/crianças2.JPEG">
+          <img src="img/rodacrianças.jpg">
+          <img src="img/crianças4.jpg">
         </div>
-    </div>
-    
+        <div class="texto-gigantinhos">
+          <p>
+            O Projeto Semear é uma ação social e evangelística que leva amor, cuidado e esperança a quem
+            mais precisa. Atuamos de forma voluntária em comunidades carentes, hospitais, abrigos, 
+            orfanatos e presídios, levando doações, mensagens de fé e apoio humanitário. 
+            Todo o trabalho é realizado por voluntários e mantido com 100% de doações. 
+            Também somos responsáveis pelo CMEI Gigantinhos Graciliano Ramos, onde cuidamos 
+            e semeamos valores desde a infância.
+          </p>
+        </div>
+      </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-conteudo">
           <div class="coluna logo-coluna">
-            <img src="/img/logo.png" alt="Logo da empresa" class="logo-footer">
+            <img src="img/logo.png" alt="Logo da empresa" class="logo-footer">
           </div>
           <div class="coluna">
             <h4>Institucional</h4>
@@ -69,28 +168,25 @@
           <div class="coluna">
             <h4>Contato</h4>
             <p>Email: <a href="mailto:semearmissoesmcz@gmail.com">semearmissoesmcz@gmail.com</a></p>
-            <p>WhatsApp: <br> <a href="https://wa.me/5582996141189" target="_blank">+55 (82) 9 9614-1189</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5582996141189" target="_blank">+55 (82) 9 9614-1189</a></p>
           </div>
           <div class="coluna">
             <h4>Redes Sociais</h4>
-            <div class="social-icons">
-                <a href="https://instagram.com/projetosemearmissoes" target="_blank">
-                    <i class="fab fa-instagram"></i> Instagram
-                  </a><br>
-                  
-                <a href="https://wa.me/5582996141189" target="_blank">
-                    <i class="fab fa-whatsapp"></i> WhatsApp
-                  </a>
-                  
-              </div>
-            </div>
+            <div class="social-icons">  
+                 <a href="https://instagram.com/projetosemearmissoes" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a><br>
+              <a href="https://wa.me/5582996141189" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+                
           </div>
         </div>
         <div class="footer-copy">
-          <p>&copy; 2025 Semear Missões. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+            <p>&copy; 2025 Semear Missões. Todos os direitos reservados.</p>
+          </div>
+        </footer>
       
-      
+<script src="script.js"></script>
 </body>
 </html>
